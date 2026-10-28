@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --color-brand-primary: #3ECF4C;
+  --color-brand-primary-hover: #34BD41;
+  --color-brand-secondary: #E8F9EE;
+  --color-brand-secondary-text: #38CB48;
+  --color-brand-secondary-hover: #DCF5E3;
+  --color-brand-bg: #FFFDF3;
+  --color-brand-card: #FFFFFF;
+  --color-brand-text: #222325;
+  --color-brand-muted: #7A7A7A;
+  --color-brand-border: #F1F1F1;
+  --color-brand-input-border: #E5E7EB;
+  --color-brand-orange: #F8A435;
+  --color-brand-red: #F04438;
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+
+  body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #FFFDF3;
+    color: #222325;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #root {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+}
